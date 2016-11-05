@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using HelloService.Interfaces;
 using HelloService.Services;
+using HelloRepository.Interfaces;
+using HelloRepository;
 
 namespace HelloWorld
 {
@@ -32,7 +34,11 @@ namespace HelloWorld
             // Add framework services.
             services.AddMvc();
 
-            services.AddSingleton<IMessageService, MessageService>();
+            // Services
+            services.AddTransient<IMessageService, MessageService>();
+
+            // Repos
+            services.AddTransient<IMessageRepository, MessageRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

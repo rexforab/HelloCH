@@ -21,7 +21,7 @@ namespace HelloWorld.Controllers
         [HttpGet]
         public string Get()
         {
-            return _messageService.GetHello();
+            return _messageService.GetMessage(1).HelloMessage;
         }
         
     }

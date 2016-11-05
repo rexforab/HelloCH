@@ -3,7 +3,6 @@
 
   "dependencies": {
     "HelloEntities": "1.0.0-*",
-    "HelloRepository": "1.0.0-*",
     "NETStandard.Library": "1.6.0"
   },
 

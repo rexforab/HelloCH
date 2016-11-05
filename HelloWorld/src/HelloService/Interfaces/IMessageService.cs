@@ -1,8 +1,10 @@
 ﻿
+using HelloEntities;
+
 namespace HelloService.Interfaces
 {
     public interface IMessageService
     {
-        string GetHello();
+        Message GetMessage(int id);
     }
 }

@@ -15,7 +15,9 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-    "HelloService": "1.0.0-*"
+    "HelloService": "1.0.0-*",
+    "HelloRepository": "1.0.0-*",
+    "HelloEntities": "1.0.0-*"
   },
 
   "tools": {
