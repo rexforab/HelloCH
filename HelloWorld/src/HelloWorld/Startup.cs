@@ -38,7 +38,7 @@ namespace HelloWorld
             services.AddTransient<IMessageService, MessageService>();
 
             // Repos
-            services.AddTransient<IMessageRepository, MessageRepository>();
+            services.AddTransient<IMessageRepository, MessageStaticRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

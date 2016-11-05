@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace HelloRepository
 {
-    public class MessageRepository : IMessageRepository
+    public class MessageStaticRepository : IMessageRepository
     {
         private static List<Message> _messages = new List<Message>();
 
-        public MessageRepository()
+        public MessageStaticRepository()
         {
             Add(new Message() {Id = 1, HelloMessage = "Hello World" });
         }
