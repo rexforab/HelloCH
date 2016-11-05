@@ -1,7 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HelloWorld.Controllers;
-using Microsoft.AspNetCore.Mvc;
 using HelloService.Interfaces;
 using Moq;
 
