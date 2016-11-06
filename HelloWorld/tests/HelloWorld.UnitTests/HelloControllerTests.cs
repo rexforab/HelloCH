@@ -14,7 +14,7 @@ namespace HelloWorld.UnitTests
 
             // Arrange
             var mockService = new Mock<IMessageService>();
-            mockService.Setup(service => service.GetMessage(1)).Returns("Test Success");
+            mockService.Setup(service => service.GetMessageText(1)).Returns("Test Success");
 
             var controller = new HelloController(mockService.Object);
 
