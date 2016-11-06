@@ -5,6 +5,6 @@ namespace HelloService.Interfaces
 {
     public interface IMessageService
     {
-        Message GetMessage(int id);
+        string GetMessageText(int id);
     }
 }

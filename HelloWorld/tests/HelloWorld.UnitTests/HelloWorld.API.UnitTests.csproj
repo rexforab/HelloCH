@@ -39,11 +39,17 @@
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="HelloService">
-      <HintPath>..\src\HelloWorld\bin\Debug\netcoreapp1.0\HelloService.dll</HintPath>
+    <Reference Include="HelloRepository, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\src\HelloWorld\bin\Debug\netcoreapp1.0\HelloRepository.dll</HintPath>
     </Reference>
-    <Reference Include="HelloWorld">
-      <HintPath>..\src\HelloWorld\bin\$(Configuration)\netcoreapp1.0\HelloWorld.dll</HintPath>
+    <Reference Include="HelloService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\src\HelloWorld\bin\Debug\netcoreapp1.0\HelloService.dll</HintPath>
+    </Reference>
+    <Reference Include="HelloWorld, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\src\HelloWorld\bin\Debug\netcoreapp1.0\HelloWorld.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNetCore.Antiforgery, Version=1.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.Antiforgery.1.0.1\lib\net451\Microsoft.AspNetCore.Antiforgery.dll</HintPath>

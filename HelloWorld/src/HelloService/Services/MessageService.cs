@@ -13,9 +13,9 @@ namespace HelloService.Services
             _messageRepository = messageRepository;
         }
 
-        public Message GetMessage(int id)
+        public string GetMessageText(int id)
         {
-            return _messageRepository.GetMessageById(id);
+            return _messageRepository.GetMessageById(id).HelloMessage;
         }
     }
 }
