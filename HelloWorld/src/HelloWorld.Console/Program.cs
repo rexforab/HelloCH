@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 
 namespace HelloWorld.ConsoleApp
 {
@@ -19,12 +20,18 @@ namespace HelloWorld.ConsoleApp
 
         static async Task MainAsync()
         {
-            HttpClient cons = new HttpClient();
-            cons.BaseAddress = new Uri("http://localhost:56993/");
-            cons.DefaultRequestHeaders.Accept.Clear();
-            cons.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddEnvironmentVariables(); 
+            var config = builder.Build();
 
-            await MyAPIGet(cons);
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri(config["apiUrl"]);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+            await MyAPIGet(client);
         }
 
         static async Task MyAPIGet(HttpClient cons)
