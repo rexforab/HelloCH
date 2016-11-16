@@ -1,6 +1,6 @@
-# HelloCH
+# Hello
 
-Greetings Crowe Horwath!
+Greetings!
 
 In an effort to learn new technology I haven't used yet at my current job, I have used .Net CORE for this assignment. 
 
